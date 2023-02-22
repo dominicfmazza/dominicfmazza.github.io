@@ -2,64 +2,68 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Dominic Maza
     - name: Date of Birth
-      value: 14th March 1879
+      value: 4th April 2001
     - name: Languages
-      value: English, German
+      value: English
+    - name: Email
+      value: dominicfmazza@gmail.com
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelors of Engineering
+      institution: Michigan State University
+      year: 2019 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Major
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+            - Computer Science
+            - 3.67 GPA
+        - title: Minor
+          contents:
+            - Linguistics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Project Lead
+      institution: Michigan State University CANVAS - Autonomous Vehicle Club
+      year: 2021 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Leading multiple sub-teams of undergraduate researchers using CI/CD,, Kanban boards, and communication platforms to ensure rapid development of software
+        - Responsible for maintaining software for an autonomous system, using knowledge of ROS, C++, and Python for process improvement and to minimize technical debt accrued over the past years of the program
+        - Facilitating workshops and developed tutorials in efforts to educate new organization members and kickstart their development in ROS on the autonomous vehicle
+        - Migrated MSU AutoDrive Challenge Team to a standalone organization focused on undergraduate education in autonomous vehicles and robotics
+
+    - title: Student Researcher
+      institution: Michigan State University - WAVES Lab
+      year: 2021 - Present
       description:
-        - Description 1.
-        - Description 2.
+        - Working on an active research project utilizing skills in Pytorch and Python to assist in the development of the CLOCs sensor fusion technique between LiDAR and Camera computer vision networks
+        - Extracting sensor fusion technique by isolating project specific code from a larger repository to develop a modular deployment of the technique
+        - Developing skills in dependency analysis, compilation troubleshooting, and computer vision techniques by learning from PhD candidates to aid in a personal understanding of their academic research
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Perception Team Lead
+      institution: Michigan State University AutoDrive Challenge Team
+      year: 2020 - 2021
       description:
+        - Devising a CPU-based computer vision pipeline by using model optimizations and CPU libraries to facilitate 2D object detection in the AutoDrive challenge
+        - Leading a team of undergraduate engineers in their efforts to develop the above pipeline by effectively dividing our labor into manageable deliverables
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: EnSURE Student Researcher
+      institution: Michigan State University - WAVES Lab
+      year: 2020
+      description:
+        - Developing a working model of vehicle geometry, sensors, and transforms to simulate vehicle systems in the CARLA open-source simulator
+        - Testing vehicle model and path-planning systems by integrating vehicle’s ROS system with the CARLA simulator
+
+    - title: Professorial Assistant
+      institution: Michigan State University AutoDrive Challenge Team
+      year: 2019 - 2020
+      description:
+        - Developing skills for vehicle path planning, mapping, and object avoidance by learning in an active development environment to aid in performance in the Auto Drive competition
 
 - title: Open Source Projects
   type: time_table
@@ -71,27 +75,41 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - title: College of Engineering Dean's List
+      year: 2020, 2021, 2022
+    - title: MSU Professorial Assistantship
+      year: 2019 - 2021
+    - title: MSU EnSURE Scholar
+      year: 2020
+    - title: MSU Honors College Scholarship
+      year: 2019 - 2023
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: General Robotics
       items:
-        - Description 1.
-        - Description 2.
+        - ROS Development and Deployment
+        - Image-based Computer Vision
+        - LiDAR-based Computer Vision
+    - title: Machine Learning
+      items:
+        - Pytorch
+    - title: Programming Languages
+      items:
+        - Python
+        - C++
+        - YAML/JSON
+        - Bash/Shell Scripting
+    - title: Leadership
+      items:
+        - Project Management
+        - Documentation generation and maintenance
+        - Tutorial creation
+        - Workshop management
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Film Photography, Music, Hiking
+    - <u>Software:</u> Rust, UNIX System Customization, Workflow Optimization
