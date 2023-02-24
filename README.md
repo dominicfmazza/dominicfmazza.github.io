@@ -1,6 +1,6 @@
 # Personal Website
 
-This repository contains the source for my personal website, as well as the CI/CD parameters needed to update the site via Github Actions. 
+This repository contains the source for my personal website, as well as the CI/CD configuration needed to update the site via Github Actions. 
 
 # Software Used
 
