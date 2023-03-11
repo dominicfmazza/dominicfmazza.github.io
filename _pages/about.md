@@ -25,5 +25,5 @@ Currently, I lead the Autonomous Vehicle Club, an interdisciplinary
 student organization that focuses on making a modified 2017 Chevy Bolt autonomous. I also am
 working with the WAVES lab at MSU on sensor-fusion and object detection techniques.
 
-In the future, I hope to earn a Ph.D. in Computer Science with a concentration doing robotics,
+In the future, I hope to earn a Ph.D. in Computer Science with a concentration in robotics,
 and continue my efforts in academia.
