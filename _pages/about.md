@@ -19,11 +19,18 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Hello! I'm Dominic Mazza, an undergraduate researcher at Michigan State University who focuses on
-autonomous systems and computer vision.
+autonomous systems and computer vision. As a part of my responsibilities, I work with:
+
+- Python
+- Pytorch
+- ROS
+- C++
+- GitLab CI/CD & Github Actions
 
 Currently, I lead the Autonomous Vehicle Club, an interdisciplinary
 student organization that focuses on making a modified 2017 Chevy Bolt autonomous. I also am
 working with the WAVES lab at MSU on sensor-fusion and object detection techniques.
 
-In the future, I hope to earn a Ph.D. in Computer Science with a concentration in robotics,
-and continue my efforts in academia.
+As I graduate this semester, I am looking for new opportunities in the robotics industry, the computer
+vision space, or anything to do with automation and Python.
+Take a look at my [resume](/cv) and contact me about any positions you'd like me to fill!

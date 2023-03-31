@@ -395,7 +395,7 @@ struct Args {
 }
 ```
 
-## Conclusion
+## Final Thoughts
 
 Overall, this project allowed me to fully learn how batch gradient descent works under the hood. Additionally,
 I learned the best practices for multiple different components of networks that are usually handled by

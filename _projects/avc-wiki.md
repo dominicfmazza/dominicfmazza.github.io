@@ -82,7 +82,7 @@ for example purposes were cleanly highlighted and easy to read.
   </div>
 </div>
 
-## Conclusion
+## Final Thoughts
 
 Overall, I want to let the [wiki](https://msuavc.github.io/avc_wiki/) speak for itself! I'm quite proud of it, as it turned out very
 clean and much easier to navigate than the GitLab wiki.

@@ -3,4 +3,5 @@ github_users:
 
 github_repos:
   - dominicfmazza/rustnist
+  - dominicfmazza/ros-topic-analyzer
   - msuavc/avc_wiki
