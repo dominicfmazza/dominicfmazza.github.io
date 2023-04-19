@@ -21,7 +21,7 @@ based wiki, I wanted to use a static site generator to generate the website from
 personal website (this one). After trying out multiple options, I decided on using [retype](https://retype.com/),
 which provides a no-frills way to create and update a wiki using only markdown and .yml.
 
-The resulting product is the [AVC Wiki](https://msuavc.github.io/avc_wiki/)!
+The resulting product is the [AVC Wiki](https://canvas.msu.edu/avc/wiki/)!
 
 ## Implementation
 
@@ -82,7 +82,55 @@ for example purposes were cleanly highlighted and easy to read.
   </div>
 </div>
 
+## Autopushing to MSU Servers
+
+The last part of this project was to set up building and deploying to MSU's webhosting domain. To do this,
+I migrated the repository from Github to our GitLab instance, and created a dockerfile for the project:
+
+```docker
+FROM node
+RUN apt update && apt install -y lftp && apt clean
+RUN npm install retypeapp --global
+CMD [ "/bin/bash" ]
+```
+
+From this docker file, I then created a `gitlab-ci.yml` file to handle the pipeline:
+
+```yaml
+image: docker:20.10.16
+variables:
+  DOCKER_TLS_CERTDIR: "/certs"
+
+services:
+  - docker:20.10.16-dind
+
+before_script:
+  - docker info
+
+stages:
+  - build
+  - deploy
+
+build-web-contents:
+  stage: build
+  script:
+    - rm -rf ${WIKI_BUILD_DIR}*
+    - cp -r ${GITLAB_BUILD_DIR}* ${WIKI_BUILD_DIR}
+    - cd ${WIKI_BUILD_DIR}
+    - ls -la && pwd
+    - docker build -f ./docker/Dockerfile -t avc-retype .
+    - docker run -v /home/gitlab-runner/wiki:/home/gitlab-runner/wiki:rw -w /home/gitlab-runner/wiki avc-retype retype build 
+
+deploy-web-contents:
+  stage: deploy
+  script:
+    - docker build -f ./docker/Dockerfile -t avc-retype .
+    - docker run -v /home/gitlab-runner/wiki:/home/gitlab-runner/wiki:rw -w /home/gitlab-runner/wiki avc-retype lftp -c "...command body..."
+```
+
+With these set up, the wiki website will automatically push changes to the webserver when changes are pushed to the repository.
+
 ## Final Thoughts
 
-Overall, I want to let the [wiki](https://msuavc.github.io/avc_wiki/) speak for itself! I'm quite proud of it, as it turned out very
+Overall, I want to let the [wiki](https://canvas.msu.edu/avc/wiki/) speak for itself! I'm quite proud of it, as it turned out very
 clean and much easier to navigate than the GitLab wiki.
